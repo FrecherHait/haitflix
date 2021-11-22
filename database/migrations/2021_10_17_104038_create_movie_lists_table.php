@@ -15,8 +15,8 @@ class CreateMovieListsTable extends Migration
     {
         Schema::create('movie_lists', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('category_id')->unsigned();
-            $table->integer('type_id')->unsigned();
+            $table->bigInteger('category_id')->unsigned();
+            $table->bigInteger('type_id')->unsigned();
             $table->string('title');
             $table->string('orig_name');
             $table->string('slug')->unique();
