@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['namespace' => 'App\Http\Controllers\Movie', 'prefix'=> 'movie'],
+    function() {
+        $methods = ['index', 'edit', 'store', 'update', 'create',];
+        Route::resource('','MovieListsController')->Only($methods)->names('movies');
+    });
