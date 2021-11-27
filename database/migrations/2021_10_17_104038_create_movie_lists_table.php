@@ -20,6 +20,7 @@ class CreateMovieListsTable extends Migration
             $table->string('title');
             $table->string('orig_name');
             $table->string('slug')->unique();
+            $table->text('bg_img')->nullable();
             $table->text('img')->nullable();
             $table->year('year');
             $table->string('country');

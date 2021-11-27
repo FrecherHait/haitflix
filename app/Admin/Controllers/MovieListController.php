@@ -32,6 +32,7 @@ class MovieListController extends AdminController
         $grid->column('title', __('Title'));
         $grid->column('orig_name', __('Orig name'));
         $grid->column('slug', __('Slug'));
+        $grid->column('bg_img', __('Bg_img'));
         $grid->column('img', __('Img'));
         $grid->column('year', __('Year'));
         $grid->column('country', __('Country'));
@@ -62,6 +63,7 @@ class MovieListController extends AdminController
         $show->field('title', __('Title'));
         $show->field('orig_name', __('Orig name'));
         $show->field('slug', __('Slug'));
+        $show-field('bg_img', __('Bg_img'));
         $show->field('img', __('Img'));
         $show->field('year', __('Year'));
         $show->field('country', __('Country'));
@@ -90,6 +92,7 @@ class MovieListController extends AdminController
         $form->text('title', __('Title'));
         $form->text('orig_name', __('Orig name'));
         $form->text('slug', __('Slug'));
+        $form->textarea('bg_img', __('Bg_img'));
         $form->textarea('img', __('Img'));
         $form->date('year', __('Year'))->default(date('Y-m-d'));
         $form->text('country', __('Country'));
