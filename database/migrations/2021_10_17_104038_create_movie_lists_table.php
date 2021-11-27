@@ -20,13 +20,13 @@ class CreateMovieListsTable extends Migration
             $table->string('title');
             $table->string('orig_name');
             $table->string('slug')->unique();
-            $table->text('img');
+            $table->text('img')->nullable();
             $table->year('year');
             $table->string('country');
             $table->smallInteger('cnt_series')->nullable();
             $table->text('actors');
             $table->text('description');
-            $table->text('link');
+            $table->json('link')->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->foreign('category_id')->references('id')->on('movie_categories');
