@@ -11,13 +11,13 @@
         </div>
 
         <div class="haitflix-mob-nav">
-            <nav class="navbar navbar-light bg-light fixed-top">
+            <nav class="navbar navbar-dark bg-dark fixed-top">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <!--a class="navbar-brand" href="#">Навигационная панель Offcanvas</--a-->
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas bg-dark offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -77,18 +77,24 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-12 col-lg-3 col-sm-6 col-xs-12">
-                                        <div class="haitflix-images mb-3">
+                                        <div class="haitflix-movie-round-image mb-3">
                                             <img src="files/image/terminator_1.jpg">
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-3 col-sm-6 col-xs-12">
-                                        <img src="files/image/terminator_2.jpg">
+                                        <div class="haitflix-movie-round-image mb-3">
+                                            <img src="files/image/terminator_2.jpg">
+                                        </div>
                                     </div>
                                     <div class="col-12 col-lg-3 col-sm-6 col-xs-12">
-                                        <img src="files/image/terminator_3.jpg">
+                                        <div class="haitflix-movie-round-image mb-3">
+                                            <img src="files/image/terminator_3.jpg">
+                                        </div>
                                     </div>
                                     <div class="col-12 col-lg-3 col-sm-6 col-xs-12">
-                                        <img src="files/image/terminator_3.jpg">
+                                        <div class="haitflix-movie-round-image mb-3">
+                                            <img src="files/image/terminator_3.jpg">
+                                        </div>
                                     </div>
                                 </div>
                             </div>

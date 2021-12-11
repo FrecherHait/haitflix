@@ -60,6 +60,10 @@ ul.hx-nav-menu > li:hover {
     width: 100%;
 }
 
+.haitflix-movie-round-image > img{
+    border-radius: 1rem;
+}
+
 img{
     max-width: 100%;
 }
