@@ -22,3 +22,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Movie', 'prefix'=> 'movies'],
         $methods = ['index', 'edit', 'store', 'update', 'create',];
         Route::resource('','MovieListsController')->Only($methods)->names('movies');
     });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
