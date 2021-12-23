@@ -20,6 +20,7 @@ class MovieListsController extends Controller
             'title',
             'orig_name',
             'slug',
+            'bg_img',
             'img',
             'year',
             'country',
@@ -67,7 +68,7 @@ class MovieListsController extends Controller
     {
         $item = MovieList::where('slug','=',$id)->findOrFail($id);
         $categoryList = MovieCategory::all();
-        return view('movie.pages.page',
+        return view('movies.show',
             compact('item', 'categoryList'));
     }
 

@@ -82,13 +82,17 @@
                                     <h3>ФИЛЬМЫ</h3>
                                 </div>
                                 <div class="row">
-                                    <div class="col-12 col-lg-3 col-sm-6 col-xs-12">
-                                        <div class="haitflix-movie-round-image mb-3">
-                                            <img src="files/image/terminator_1.jpg">
-                                            <a href="#">Терминатор</a>
+                                    @foreach($paginator as $item)
+                                        @php /** @var \App\Models\MovieList $item */ @endphp
+                                        <div class="col-12 col-lg-3 col-sm-6 col-xs-12">
+                                            <div class="haitflix-movie-round-image mb-3">
+                                                <img src="{{ $item->bg_img }}">
+                                                <a href="#">{{ $item->title }}</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-lg-3 col-sm-6 col-xs-12">
+                                    @endforeach
+
+                                    <!--div class="col-12 col-lg-3 col-sm-6 col-xs-12">
                                         <div class="haitflix-movie-round-image mb-3">
                                             <img src="files/image/terminator_2.jpg">
                                             <a href="#">Терминатор 2: Судный день</a>
@@ -105,7 +109,7 @@
                                             <img src="files/image/terminator_4.jpg">
                                             <a href="#">Терминатор 4: Да придёт спаситель</a>
                                         </div>
-                                    </div>
+                                    </div-->
                                 </div>
                             </div>
                     </div>

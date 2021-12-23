@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::group(['namespace' => 'App\Http\Controllers\Movie', 'prefix'=> 'movies'],
     function() {
-        $methods = ['index', 'edit', 'store', 'update', 'create',];
+        $methods = ['index', 'edit', 'show','store', 'update', 'create',];
         Route::resource('','MovieListsController')->Only($methods)->names('movies');
     });
 
