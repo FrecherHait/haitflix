@@ -13,6 +13,7 @@ a{
 .hx-nav-container{
     padding: 0.2rem;
     width: 260px;
+    max-width: 100%;
 }
 ul.hx-nav-menu{
     padding: 0;
@@ -29,10 +30,44 @@ ul.hx-nav-menu > li > a {
     display: block;
     color: #ffffff;
 }
+
+ul.hx-mob-nav-menu > li {
+    font-size: 24px;
+    color: #ffffff;
+}
+
 ul.hx-nav-menu > li:hover {
     background-color: #000000;
     border-radius: 1rem;
 }
+
+.haitflix-movie-round-image{
+    text-align: center;
+}
+
+.haitflix-movie-round-image > a{
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.haitflix-movie-round-image > a:hover {
+    text-decoration: revert;
+}
+
+ul.hx-mob-nav-menu > li > a{
+    margin-left: 10px;
+}
+
+.hx-mob-nav-item{
+    color: #ffffff
+}
+
+.hx-mob-nav-item:hover{
+    background-color: #000000;
+    background-size: 50px;
+    border-radius: 1rem;
+}
+
 .haiflix-content-container{
     width: 79%;
     padding: 1rem;

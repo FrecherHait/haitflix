@@ -5,6 +5,12 @@
         <link href="{{ asset('style/index_style.css') }}" rel="stylesheet">
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
+    <style>
+        #flag-main{
+            background-color: #000000;
+            border-radius: 1rem;
+        }
+    </style>
     <body>
         <div class="haitflix-container">
             <p>HAITFLIX</p>
@@ -23,14 +29,14 @@
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 hx-mob-nav-menu">
+                                <li class="hx-mob-nav-item" id="flag-main">
+                                    <a class="nav-link active" aria-current="page" href="movies">Главная</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Ссылка</a>
                                 </li>
-                                <li class="nav-item dropdown">
+                                <!--li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Выпадающий список
                                     </a>
@@ -42,12 +48,12 @@
                                         </li>
                                         <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
                                     </ul>
-                                </li>
+                                </li-->
                             </ul>
-                            <form class="d-flex">
+                            <!--form class="d-flex">
                                 <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
                                 <button class="btn btn-outline-success" type="submit">Поиск</button>
-                            </form>
+                            </form-->
                         </div>
                     </div>
                 </div>
@@ -79,21 +85,25 @@
                                     <div class="col-12 col-lg-3 col-sm-6 col-xs-12">
                                         <div class="haitflix-movie-round-image mb-3">
                                             <img src="files/image/terminator_1.jpg">
+                                            <a href="#">Терминатор</a>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-3 col-sm-6 col-xs-12">
                                         <div class="haitflix-movie-round-image mb-3">
                                             <img src="files/image/terminator_2.jpg">
+                                            <a href="#">Терминатор 2: Судный день</a>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-3 col-sm-6 col-xs-12">
                                         <div class="haitflix-movie-round-image mb-3">
                                             <img src="files/image/terminator_3.jpg">
+                                            <a href="#">Терминатор 3: Восстание машин</a>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-3 col-sm-6 col-xs-12">
                                         <div class="haitflix-movie-round-image mb-3">
-                                            <img src="files/image/terminator_3.jpg">
+                                            <img src="files/image/terminator_4.jpg">
+                                            <a href="#">Терминатор 4: Да придёт спаситель</a>
                                         </div>
                                     </div>
                                 </div>
