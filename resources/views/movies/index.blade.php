@@ -87,11 +87,10 @@
                                         <div class="col-12 col-lg-3 col-sm-6 col-xs-12">
                                             <div class="haitflix-movie-round-image mb-3">
                                                 <img src="{{ $item->bg_img }}">
-                                                <a href="#">{{ $item->title }}</a>
+                                                <a href="{{ route('movies.show', $item->slug) }}">{{ $item->title }} ({{ $item->year }})</a>
                                             </div>
                                         </div>
                                     @endforeach
-
                                     <!--div class="col-12 col-lg-3 col-sm-6 col-xs-12">
                                         <div class="haitflix-movie-round-image mb-3">
                                             <img src="files/image/terminator_2.jpg">

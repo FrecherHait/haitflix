@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class MovieCategory extends Model
 {
-    use SoftDeletes;
-    protected $fillable = [
-        'id',
-        'title'
-    ];
+    use HasFactory;
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

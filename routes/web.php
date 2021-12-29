@@ -17,10 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['namespace' => 'App\Http\Controllers\Movie', 'prefix'=> 'movies'],
+Route::group(['namespace' => 'App\Http\Controllers\Movie', 'prefix'=> ''],
     function() {
-        $methods = ['index', 'edit', 'show','store', 'update', 'create',];
-        Route::resource('','MovieListsController')->Only($methods)->names('movies');
+        $methods = ['index', 'edit', 'show', 'store', 'update', 'create'];
+        Route::resource('movies','MovieListsController')->Only($methods)->names('movies');
     });
 
 Auth::routes();

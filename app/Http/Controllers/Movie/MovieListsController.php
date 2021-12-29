@@ -66,9 +66,10 @@ class MovieListsController extends Controller
      */
     public function show($id)
     {
-        $item = MovieList::where('slug','=',$id)->findOrFail($id);
+        $item = MovieList::where('slug','=',$id)->firstOrFail();
+        //$item = MovieList::findOrFail($id);
         $categoryList = MovieCategory::all();
-        return view('movies.show',
+        return view('movies.page',
             compact('item', 'categoryList'));
     }
 
