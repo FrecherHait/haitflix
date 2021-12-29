@@ -2,6 +2,7 @@
 
 namespace App\Admin\Controllers;
 
+use App\Models\MovieCategory;
 use App\Models\MovieList;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
@@ -87,19 +88,21 @@ class MovieListController extends AdminController
     {
         $form = new Form(new MovieList());
 
-        $form->number('category_id', __('Category id'));
-        $form->number('type_id', __('Type id'));
+        //$form->number('category_id', __('Category id'));
+        $form->select('category_id')->options([1 => "Ужасы", 2 => "Детектив", 3 => 'Фэнтези', 4 => 'Боевик']);
+        //$form->number('type_id', __('Type id'));
+        $form->select('type_id')->options([1 => "Фильм", 2 => "Сериал"]);
         $form->text('title', __('Title'));
         $form->text('orig_name', __('Orig name'));
         $form->text('slug', __('Slug'));
         $form->textarea('bg_img', __('Bg_img'));
         $form->textarea('img', __('Img'));
-        $form->date('year', __('Year'))->default(date('Y-m-d'));
+        $form->year('year', __('Year'));
         $form->text('country', __('Country'));
         $form->number('cnt_series', __('Cnt series'));
         $form->textarea('actors', __('Actors'));
         $form->textarea('description', __('Description'));
-        $form->text('link', __('Link'));
+        $form->keyValue('link');
 
         return $form;
     }

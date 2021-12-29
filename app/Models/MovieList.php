@@ -36,4 +36,7 @@ class MovieList extends Model
     {
         return 'slug';
     }
+    protected $casts = [
+        'link' =>'json',
+    ];
 }
