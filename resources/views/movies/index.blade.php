@@ -66,7 +66,7 @@
                     <div class="col-2 hidden-sm hidden-xs">
                         <div class="hx-nav-container">
                             <ul class="hx-nav-menu">
-                                <li><a href="#">BUTTON1</a></li>
+                                <li id="flag-main"><a href="{{ route('movies.index') }}">ГЛАВНАЯ</a></li>
                                 <li><a href="#">BUTTON2</a></li>
                                 <li><a href="#">BUTTON3</a></li>
                                 <li><a href="#">BUTTON4</a></li>
