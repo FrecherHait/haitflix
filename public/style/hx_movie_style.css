@@ -1,0 +1,46 @@
+body{
+    background: #232323;
+    overflow-x: hidden;
+}
+
+.hx-img-cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hx-movie-bg-block{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 78vh;
+}
+
+.hx-movie-bg-image{
+    width: 100%;
+    position: relative;
+}
+
+.pt-fixed{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+ul.hx-mob-nav-menu > li {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+ul.hx-nav-menu > li:hover {
+    background-color: #000000;
+    border-radius: 1rem;
+}
+
+.hx-poster-image{
+    position: relative;
+    bottom: 20%;
+    border-radius: 1rem;
+}

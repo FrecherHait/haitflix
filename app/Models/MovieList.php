@@ -32,6 +32,12 @@ class MovieList extends Model
         return $this->belongsTo(MovieCategory::class);
     }
 
+    public function type()
+    {
+        //Жанр фильма
+        return $this->belongsTo(MovieType::class);
+    }
+
     public function getRouteKeyName()
     {
         return 'slug';

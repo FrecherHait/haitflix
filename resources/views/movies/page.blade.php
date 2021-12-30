@@ -2,16 +2,16 @@
 <html lang="ru-RU">
 <head>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('style/index_style.css') }}" rel="stylesheet">
+    <link href="{{ asset('style/hx_movie_style.css') }}" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 <style>
 
 </style>
 <body>
-<div class="haitflix-container">
+<!--div class="haitflix-container">
     <p>HAITFLIX</p>
-</div>
+</div-->
 
 <div class="haitflix-mob-nav">
     <nav class="navbar navbar-dark bg-dark fixed-top">
@@ -57,8 +57,62 @@
     </nav>
 </div>
 
+<main class="pt-fixed">
+        <div class="row">
+            <div class="hx-movie-bg-image d-inline-flex mb-3">
+                <div class="hx-movie-bg-block">
+                    <img src="{{ $item->img }}" class="hx-img-cover">
+                </div>
+            </div>
+            <div class="col-12 px-0 px-md-3">
+                <div class="row">
+                    <div class="col-12 col-xl-8">
+                        <div class="p-3">
+                            <div class="row hx-movie-content">
+                                <div class="col-12 d-md-none">
+                                    <div class="mb-1">
+                                        <h2 style="color: white;" class="d-inline-block">{{ $item->title }} ({{ $item->year }})</h2>
+                                    </div>
+                                    <div class="mb-1">
+                                        <h2 style="color: white;" class="d-inline-block">Оригинальное название: {{ $item->orig_name }}</h2>
+                                    </div>
+                                    <div class="mb-1">
+                                        <h2 style="color: white;" class="d-inline-block">Тип фильма: {{ $item->type->title }}</h2>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-xl-4">
+                                    <img width="600" height="900" src="{{ $item->bg_img }}" class="hx-poster-image img-fluid">
+                                </div>
+                                <div class="col-6 col-xl-8">
+                                    <div class="mb-1">
+                                        <h2 style="color: white;" class="d-inline-block">{{ $item->title }} ({{ $item->year }})</h2>
+                                    </div>
+                                    <div class="mb-1">
+                                        <h2 style="color: white;" class="d-inline-block">Оригинальное название: {{ $item->orig_name }}</h2>
+                                    </div>
+                                    <div class="mb-1">
+                                        <h2 style="color: white;" class="d-inline-block">Тип фильма: {{ $item->type->title }}</h2>
+                                    </div>
+                                    <div class="mb-1">
+                                        <h3 style="color: white;" class="d-inline-block">Описание: {{ $item->description }}</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="player">
+                        <script src="{{ asset('playerjs.js') }}"></script>
+                        <script language="JavaScript">
+                            var player = new Playerjs({id:"player", title:"Милый дом", file:"{{ old('link', $item->link) }}"});
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
+
 <section>
-    <div class="haitflix-content">
+    <!--div class="haitflix-content">
         <div class="row">
             <div class="col-2 hidden-sm hidden-xs">
                 <div class="hx-nav-container">
@@ -71,7 +125,7 @@
                         <li><a href="#">BUTTON6</a></li>
                     </ul>
                 </div>
-            </div>
+            </div-->
 
             <!--div class="col-lg-9 col-xs-12">
                 <div class="container">
@@ -81,9 +135,9 @@
                     <div class="row">
                     </div>
                 </div>
-            </div-->
+            </div>
         </div>
-    </div>
+    </div-->
 </section>
 
 </body>
